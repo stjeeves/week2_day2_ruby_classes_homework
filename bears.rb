@@ -24,13 +24,13 @@ def add_fish_to_bear(fish)
   @stomach.count
 end
 
-def add_fish_to_river(fish1, fish2, fish3, fish4, fish5)
-  @total_fish.push(fish1, fish2, fish3, fish4, fish5)
-  return @total_fish.length
-end
+# def add_fish_to_river(fish1, fish2, fish3, fish4, fish5)
+#   @total_fish.push(fish1, fish2, fish3, fish4, fish5)
+#   return @total_fish.length
+# end
 
 def count_fish_in_river()
-  return @total_fish.length
+  return @river1[1].length
 end
 
 def remove_fish_from_river(fish)
@@ -39,10 +39,9 @@ end
 
 
 def eat_fish(bear, fish)
-  total_fish = count_fish_in_river()
-  if total_fish >= 1
-    bear.add_fish_to_bear(fish)
-  end
+  #count_fish_in_river()
+    #if @total_fish >= 1
+      bear.add_fish_to_bear(fish)
   remove_fish_from_river(fish)
 end
 
