@@ -12,7 +12,10 @@ def initialize(name, type)
   @stomach = []
 end
 
-
+def add_fish_to_bear(fish)
+  @stomach << fish
+  @stomach.count
+end
 
 
 
